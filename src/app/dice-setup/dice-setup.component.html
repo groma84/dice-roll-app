@@ -1,0 +1,15 @@
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+  <fieldset class="dice-setup__container-fields">
+    <ul class="dice-setup__form-fields">
+      <li>
+        <label for="dicetype">Maximale Augenzahl</label>
+        <input type="number" name="dicetype" id="dicetype" pattern="[1-6]" maxlength="1" required [ngModel]="initialDice" autofocus
+          class="dice-setup__type-input" min="1" max="6">
+      </li>
+    </ul>
+    <button type="submit" [disabled]="form.invalid" class="dice-setup__submit-button">
+      <i class="material-icons">casino</i> Würfeln
+      <i class="material-icons">casino</i>
+    </button>
+  </fieldset>
+</form>

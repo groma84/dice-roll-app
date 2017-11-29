@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans');
+
+$base-size: 24px;
+
+body {
+  background-image: linear-gradient(to bottom, #ffffcf 0%, #cbc26d 100%);
+  background-repeat: no-repeat;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: $base-size;
+
+  padding: 0px (2*$base-size) $base-size (2*$base-size);
+}
+
+h1 {
+  font-family: 'Indie Flower', serif;
+  font-size: (3*$base-size);
+}
+
+input {
+  font-size: $base-size;
+}

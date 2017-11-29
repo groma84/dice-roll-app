@@ -1,0 +1,3 @@
+<div class="dice-result__container" [ngClass]="{'dice-result__one': lastRoll.length === 1, 'dice-result__two': lastRoll.length === 2, 'dice-result__three': lastRoll.length === 3, 'dice-result__four': lastRoll.length === 4, 'dice-result__five': lastRoll.length === 5, 'dice-result__six': lastRoll.length === 6}">
+  <div class="dice-result__eye" *ngFor="let n of lastRoll"></div>
+</div>

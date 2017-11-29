@@ -1,0 +1,29 @@
+.dice-setup__container-fields {
+  border: 0;
+}
+
+.dice-setup__form-fields {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.dice-setup__type-input {
+  max-width: 4rem;
+  text-align: center;
+  margin-left: 1rem;
+}
+
+.dice-setup__submit-button {
+  font-size: 2rem;
+  background-color: white;
+  border-radius: 0.25rem;
+  border: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: all 0.5s linear;
+
+  &:hover {
+    background-color: lightgreen;
+  }
+}
